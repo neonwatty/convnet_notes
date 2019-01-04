@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<!-- always use https, not http --> 
+		<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+		<link rel="stylesheet" href="../CSS/home.css">
+		
+		<!-- need this for navigation menu --> 
+		<link rel="stylesheet" href="../CSS/navbar.css">
+		
+		<style>
+			.back-text-color { /* color of text on the back of each card */
+				color: #333;
+			}
+			
+		 </style>	
+		 
+		<!-- subscription -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../CSS/subscription.css">
+		 
+	</head>
+		 
+
+	<body>
+	
+		<!-- Navigation menu -->	
+		<br/><br/><br/>
+		<div>
+    		<ul>
+        		<li class="menu-item"><a href="../../index.html"><span class="menu-item">HOME</span></a></li>
+        		<li class="menu-item active"><a href="presentations.html"><span class="menu-item">PRESENTATIONS</span></a></li>
+        		<li class="menu-item"><a href="gallery.html"><span class="menu-item">GALLERY</span></a></li>
+        		<li class="menu-item"><a href="about.html"><span class="menu-item">ABOUT</span></a></li>
+   			</ul>
+		</div>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		
+	<div class="wrapper" style="margin-left:340px">
+      		
+      		<!-- 1st card -->
+      		<div class="col_third">
+        		<div class="hover panel">		
+          			<!-- front face -->
+          			<div class="front">
+            			<div class="box1">
+              				<p>DEEP LEARNING FROM SCRATCH</p>
+            			</div>
+          			</div>
+          			<!-- back face -->
+          			<div class="back">
+            			<div class="box2">
+              				<br/>
+             	 			<p><code class="back-text-color">Presentations for the Northwestern University course: Deep learning foundations from scratch </code></p>
+      						<p><code><a href="courses/DL_from_scratch.html">click here</a></code></p>
+    					</div>
+          			</div>	
+        		</div>
+			</div>
+			
+
+			<!-- 2nd card -->
+			<div class="col_third">
+        		<div class="hover panel" style="padding-left:60px">
+        			<!-- front face -->        		
+        			<div class="front">
+            			<div class="box1">
+              				<p>OPTIMIZATION FOR MACHINE LEARNING</p>
+            			</div>
+          			</div>
+          			<!-- back face -->   
+          			<div class="back">
+            			<div class="box2">  
+              				<p><code class="back-text-color">Presentations for the Northwestern University course: Optimization techniques for machine learning and deep leearning  </code></p>
+              				<p><code><a href="courses/optimization_for_ML_DL.html">click here</a></code></p>
+            			</div>
+          			</div>
+        		</div>
+			</div>
+			
+		
+		</div>	
+
+
+		<script>
+			$(document).ready(function(){
+				$('.hover').hover(function(){
+					$(this).addClass('flip');
+					},function(){
+						$(this).removeClass('flip');
+					});
+				});
+		</script>
+		
+	
+	</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- custom.css -->
+		<link rel="stylesheet" href="../../CSS/custom.css">
+		<!-- other stuff -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+		<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+		<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+		<link rel="stylesheet" type="text/css" href="../../files/main_style.css?1488245016" title="wsite-theme-css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<style>
+				
+			body {
+				font-size: 160%;
+				background-color: #fff;
+			}
+
+			a {
+				font-size: 110%;
+				font-weight: 400;
+   				cursor:pointer;
+			}
+					
+			a:hover{
+				text-decoration: none;
+			}
+
+			#purchase-button-container {
+  				text-align: center;
+  				margin-top: 20px;
+  				margin-bottom: 30px;
+			}
+
+			#purchase-button {
+  				text-align: center;
+  				width: 16%;
+  				padding: 21px 15px;
+  				color: #555;
+  				background-color: #fff;
+  				font-size: 100%;
+  				font-weight: 400;
+  				letter-spacing: 2px;
+  				border: solid 1px;
+  				border-color: #555;
+  				transition: background-color 0.66s ease;
+			}
+
+			#purchase-button:hover {
+  				color: white;
+  				background-color: #555;
+  				border-color: #555;
+			}
+
+			.article-description {
+  				text-align: justify;
+  				text-justify: inter-word;
+  				padding: 40px;
+  				width:68%;
+  				height:auto;
+  				margin:auto;
+  				font-size: 13pt;
+  				color: #444;
+			}
+					
+			hr.separator {
+				border-top: 1px solid #666;
+				text-align: center;
+			}
+
+			.title{
+  				font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  				font-size: 20pt;
+  				margin: 0;
+  				padding: 0;
+  				text-align: center;
+  				line-height: 65px;
+  				word-spacing: 5px;
+				text-decoration: none;
+				color: #222 !important;
+			}
+
+
+			blockquote {
+				font-style: normal;
+				border-left: 3px solid; 
+				border-left-color: #ffb909;
+				color: #666;
+			}
+
+			.cento-header{
+				padding-top: 70px !important;
+				padding-bottom: 60px !important;
+				text-align:right;
+				background-color: #fff;
+			}
+
+			
+			.liner {
+				border-left: 5px solid; 
+				border-left-color: #ffb909;
+			}
+			
+					
+		</style>
+	</head>
+
+	<body>
+	
+	
+    
+    <!-- Navigation menu -->
+  		<div class="cento-header"><div class="container"><div class="nav desktop-nav"><ul class="wsite-menu-default">
+			<!-- Home is active -->
+			<li class="wsite-menu-item-wrap" style="display: inline-block;">
+				<a href="../../../index.html" class="wsite-menu-item">Home</a>
+			</li>
+			<!-- About is NOT active -->
+			<li id="active" class="wsite-menu-item-wrap">
+				<a href="../about.html" class="wsite-menu-item">About</a>
+			</li>
+
+			</ul></div></div></div>
+   		</div>
+   		
+   		
+   		<!- - 1st post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="../../../blog_posts/Mathematical_Optimization/Part_1_motivation_random_search.html">
+					<!- - title - ->
+					<div class="wrap"><mark>Part 1: Motivation and primitive methods</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+					In this brief post we motivate the study of mathematical optimization, the collection of methods built on basic calculus by which we determine proper parameters for machine learning / deep learning models.
+				 
+					Afterwards we describe two naive methods of mathematical optimization - random evaluation and random search. Both approaches are extremely simple, but both have fundamental flaws that make them unfit for most modern deep learning / machine learning applications. We discuss them primarily because they allow us to introduce a number of key concepts - concepts shared by almost all effective mathematical optimization algorithms - in a relatively simple environment, divorced from the complications involved with more sophisticated algorithms.
+				</p>
+			</div>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='../../../blog_posts/Mathematical_Optimization/Part_1_motivation_random_search.html'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of 1st post - ->
+	
+	
+			<hr class="separator">
+		
+		
+		<!- - 2nd post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="../../../blog_posts/Mathematical_Optimization/Part_2_gradient_descent.html">
+					<!- - title - ->
+					<div class="wrap"><mark>Part 2: The gradient descent algorithm</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+					In this post we describe our first major mathematical optimization algorithm: gradient descent. Many of the core ideas we have seen with regards random local search - including e.g., steplengths and steplength rules, convergence issues, etc., - we will see carry over almost entirely to the gradient descent scheme. Specifically, we will see that unlike random search, gradient descent scales very nicely with the input dimension of a function, and so can be (and is) used with modern machine learning / deep learning problems.
+				</p>
+			</div>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='../../../blog_posts/Mathematical_Optimization/Part_2_gradient_descent.html'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of 2nd post - ->
+		
+		
+		<hr class="separator">
+		
+		
+		<!- - 3rd post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="../../../blog_posts/Mathematical_Optimization/Part_3_conservative_steplength_rules.html">
+					<!- - title - ->
+					<div class="wrap"><mark>Part 3: Conservative steplength rules</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+					In this post we discuss a mathematical framework that provides choices for the gradient descent steplength that are guaranteed to produce convergence. In particular we will discuss the notions of backtracking line search as well as the conservatively optimal fixed steplength defined by a function's Lipschitz constant.
+				</p>
+			</div>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='../../../blog_posts/Mathematical_Optimization/Part_3_conservative_steplength_rules.html'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of 3rd post - ->
+		
+		
+				
+		<hr class="separator">
+		
+		
+		<!- - 4th post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="../../../blog_posts/Mathematical_Optimization/Part_4_general_steepest_descent.html">
+					<!- - title - ->
+					<div class="wrap"><mark>Part 4: General steepest descent</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+					In this post we describe several variations of normalized gradient descent, known generally as steepest descent algorithms. These variations arise out of a small but fundamental change to the gradient descent setup, a change that has significant impact on the form of a descent direction but, importantly, not on the convergence of the methods. Because normalized gradient approaches have the benefit of being able to push through flat regions of a non-convex function, many popular optimizers for deep neural networks are built on the basic methods presented here, e.g., the Resilient Backpropagation algorithm or Rprop, as well as its variations like Root Mean Square Propagation or RMSprop.
+				</p>
+			</div>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='../../../blog_posts/Mathematical_Optimization/Part_4_general_steepest_descent.html'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of 4th post - ->
+		
+		
+		
+		<hr class="separator">
+		
+		
+		<!- - 5th post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="../../../blog_posts/Mathematical_Optimization/Part_5_Newtons_method.html">
+					<!- - title - ->
+					<div class="wrap"><mark>Part 5: Newton's method</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+					With gradient descent being built on the first order Taylor series approximation one might naturally ask: can we build a descent scheme based on second order Taylor series? The answer is a resounding yes and the resulting algorithm - called Newton's method - is the subject of this post.
+				</p>
+			</div>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='../../../blog_posts/Mathematical_Optimization/Part_5_Newtons_method.html'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of 5th post - ->
+
+
+		<!-- uncomment to add another post
+		
+		<hr class="separator">
+		
+		
+		<!- - nth post - ->
+			<br/><br/>
+			<div  style="margin:auto; width: 60%; height:auto;">
+				<!- - path - ->
+				<a class="title" href="blah blah blah">
+					<!- - title - ->
+					<div class="wrap"><mark>blah blah blah</mark></div>
+				</a>
+			</div>
+			<br/>
+		
+			<!- - description - ->	
+			<div class="article-description">
+				<p>
+				In this brief post we blah blah blah
+				</p>
+			</div>
+		
+			<!- - demo/picture - ->
+			<center><img src="demo_images/blah.png" style="width: 15%; height: auto;"/></center>
+			<br/><br/>
+		
+			<!- - read more button - ->
+			<div id='purchase-button-container'>
+    			<button id='purchase-button' type="button" style="cursor:pointer" onclick="window.location.href='blah blah blah'"> READ MORE </button>
+    		</div>
+    		<br/>
+		<!- - end of nth post - ->
+	    
+	    uncommnet to add another post -->
+
+
+	</body>
+</html>
